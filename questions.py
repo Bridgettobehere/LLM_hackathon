@@ -31,7 +31,7 @@ def questionAnswer():
 		# Fetch the number from args attribute of
 		# request accessing its 'id' from HTML
 			number = request.args.get('num')
-			sq = "Bridget knows the answer"
+			sq = "Bridget knows the answer!"
 			# pass the result to the answer HTML
 			# page using Jinja2 template
 			return render_template('answer.html',
