@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
-def squarenumber():
+def questionAnswer():
 	# If method is GET, check if number is entered
 	# or user has just requested the page.
 	# Calculate the square of number and pass it to
@@ -31,7 +31,7 @@ def squarenumber():
 		# Fetch the number from args attribute of
 		# request accessing its 'id' from HTML
 			number = request.args.get('num')
-			sq = int(number) * int(number)
+			sq = "Bridget knows the answer"
 			# pass the result to the answer HTML
 			# page using Jinja2 template
 			return render_template('answer.html',
